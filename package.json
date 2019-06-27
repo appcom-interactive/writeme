@@ -21,6 +21,10 @@
     "styleguide"
   ],
   "author": "Stefan Neidig <s.neidig@appcom-interactive.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appcom-interactive/writeme.git"
+  },
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
