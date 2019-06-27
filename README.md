@@ -19,6 +19,7 @@ writeme --type=module
 ```
 
 ## API
+```
 Usage: writeme [options]
 
 This is an interactive generator for creating readme files according to the appcom readme styleguide
@@ -29,6 +30,7 @@ Options:
   -n, --name [name]  Set the name of the software (default: "")
   -d, --dir [dir]    Set the directory where the readme is placed (default: ".")
   -h, --help         output usage information
+```
 
 ## Installation
 You can install this tool by running 
