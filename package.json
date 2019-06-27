@@ -1,5 +1,5 @@
 {
-  "name": "@appcom/writeme",
+  "name": "@appcominteractive/writeme",
   "version": "1.0.0",
   "description": "This is an interactive generator for creating readme files according to the appcom readme styleguide",
   "bin": {
@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild": "npm run lint",
     "build": "babel src --presets babel-preset-es2015 --copy-files --out-dir dist",
-    "publish": "git flow release start $npm_package_version && git flow release finish -m \"$npm_package_version\" $npm_package_version && npm publish && git push origin master",
+    "publish": "git flow release start $npm_package_version && git flow release finish -m \"$npm_package_version\" $npm_package_version && npm publish --access public && git push origin master --tags",
     "prepublish": "npm run build",
     "prelink": "npm run build",
     "lint": "eslint --max-warnings=0 .",
