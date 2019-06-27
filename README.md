@@ -12,19 +12,28 @@ writeme
 ```
 and the interactive generator will start. After completing it your README.md file is created and you can edit it to your liking.
 
-For skipping the interactive process you can provide all required parameters like so
+For skipping the interactive process entirely you can provide the type parameter. See API section for more information 
+on parameters.
 ```
-writeme --type=module --name=NAME --dir=.
+writeme --type=module
 ```
 
 ## API
-<!-- section: API -->
-<!-- Describe the API of your module / library such that other developers know how to interact with it. -->
+Usage: writeme [options]
+
+This is an interactive generator for creating readme files according to the appcom readme styleguide
+
+Options:
+  -V, --version      output the version number
+  -t, --type [type]  Set the type of software the readme is refering to (currently supported: module, solution, styleguide) (default: "")
+  -n, --name [name]  Set the name of the software (default: "")
+  -d, --dir [dir]    Set the directory where the readme is placed (default: ".")
+  -h, --help         output usage information
 
 ## Installation
 You can install this tool by running 
 ```
-npm i -g @appcom/writeme
+npm i -g @appcominteractive/writeme
 ```
 
 It requires you to have npm and node installed.
