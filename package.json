@@ -2,7 +2,9 @@
   "name": "@appcom/writeme",
   "version": "1.0.0",
   "description": "This is an interactive generator for creating readme files according to the appcom readme styleguide",
-  "main": "dist/index.js",
+  "bin": {
+    "writeme": "dist/index.js"
+  },
   "scripts": {
     "prebuild": "npm run lint",
     "build": "babel src --presets babel-preset-es2015 --copy-files --out-dir dist",
@@ -25,7 +27,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "commander": "^2.20.0",
-    "inquirer": "^6.4.1"
+    "inquirer": "^6.4.1",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "eslint-config-appcom": "^1.0.9"
