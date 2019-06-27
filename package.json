@@ -9,7 +9,6 @@
     "prebuild": "npm run lint",
     "build": "babel src --presets babel-preset-es2015 --copy-files --out-dir dist",
     "publish": "git flow release start $npm_package_version && git flow release finish -m \"$npm_package_version\" $npm_package_version && npm publish --access public && git push origin master --tags",
-    "prepublish": "npm run build",
     "prelink": "npm run build",
     "lint": "eslint --max-warnings=0 .",
     "patch": "npm --no-git-tag-version version patch",
